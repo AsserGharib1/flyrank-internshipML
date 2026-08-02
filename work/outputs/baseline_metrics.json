@@ -1,0 +1,30 @@
+{
+  "slice": {
+    "feature_month": "2026-03",
+    "outcome_month": "2026-04",
+    "decision_date": "2026-04-01",
+    "min_march_impressions": 100,
+    "rows": 88096,
+    "clients": 43
+  },
+  "label": {
+    "definition": "April change at least 20 points below the median page on the same site",
+    "base_rate": 0.29
+  },
+  "rule": {
+    "plain_words": "high impressions, low clicks for its position band",
+    "score": "ctr_shortfall_vs_position_band * log1p(march_impressions)",
+    "reason_code": "below_ctr_for_position_band",
+    "action_label": "review_title_and_meta"
+  },
+  "signal_verdicts": {
+    "staleness": "FALSE",
+    "ctr_vs_position": "CONFIRMED"
+  },
+  "precision_at_k": {
+    "p_at_10": 0.9,
+    "p_at_20": 0.7,
+    "p_at_50": 0.56,
+    "p_at_100": 0.56
+  }
+}
