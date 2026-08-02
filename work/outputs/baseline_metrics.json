@@ -4,7 +4,7 @@
     "outcome_month": "2026-04",
     "decision_date": "2026-04-01",
     "min_march_impressions": 100,
-    "rows": 88096,
+    "rows": 87518,
     "clients": 43
   },
   "label": {
@@ -22,9 +22,9 @@
     "ctr_vs_position": "CONFIRMED"
   },
   "precision_at_k": {
-    "p_at_10": 0.9,
-    "p_at_20": 0.7,
-    "p_at_50": 0.56,
-    "p_at_100": 0.56
+    "p_at_10": 0.7,
+    "p_at_20": 0.6,
+    "p_at_50": 0.58,
+    "p_at_100": 0.53
   }
 }
