@@ -4,15 +4,17 @@
     "outcome_month": "2026-04",
     "decision_date": "2026-04-01",
     "min_march_impressions": 100,
-    "rows": 87518,
-    "clients": 43
+    "frame_rows": 101441,
+    "frame_clients": 44,
+    "queue_rows": 43748,
+    "queue_clients": 43
   },
   "label": {
-    "definition": "April change at least 20 points below the median page on the same site",
-    "base_rate": 0.29
+    "definition": "April change at least 20 points below the median page on the same client",
+    "queue_base_rate": 0.3544
   },
   "rule": {
-    "plain_words": "high impressions, low clicks for its position band",
+    "eligibility": "position 1-30 and CTR below the March position-band median",
     "score": "ctr_shortfall_vs_position_band * log1p(march_impressions)",
     "reason_code": "below_ctr_for_position_band",
     "action_label": "review_title_and_meta"
